@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-el3 {
+  background-image: url(".//img/fon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-el3__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-decoration: underline;
+  padding-bottom: 30px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  width: 600px;
+  font-size: 22px;
+  padding-bottom: 100px;
+}
+
+.inner__cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  color: black;
+}
