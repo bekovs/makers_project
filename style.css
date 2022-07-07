@@ -17,6 +17,7 @@
   background: url('./assets/images/pexels-jeremy-bishop-2923595.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 50vw;
   display: flex;
   flex-direction: column;
@@ -28,11 +29,11 @@
   width: 60%;
 }
 
-.btn {
-  /* font-weight: 600; */
-}
-
 .fonty {
-
+  font-size: 0.8rem;
+  width: 40%;
+  padding: 5% 20%;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
