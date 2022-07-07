@@ -3,6 +3,15 @@
 * {
   font-family: 'Prompt';
 }
+.navbar-collapse {
+  justify-content: space-between;
+}
+.nav-link:hover {
+  color: rgb(181, 181, 181) !important;
+}
+.bg-light {
+  opacity: 0.6 !important;
+}
 
 .body-elem-1 {
   background: url('./assets/images/pexels-jeremy-bishop-2923595.jpg') no-repeat;
@@ -26,3 +35,4 @@
 .fonty {
 
 }
+
