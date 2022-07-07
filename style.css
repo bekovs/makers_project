@@ -23,7 +23,7 @@ h4 {
 }
 
 .body-elem-1-background {
-  /* background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat; */
+  background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -42,7 +42,6 @@ h4 {
   letter-spacing: 2px;
 }
 
-}
 .elem-4 {
   width: 90%;
   padding-left: 7%;
@@ -60,7 +59,7 @@ h4 {
 }
 .text-reset {
   text-decoration: none;
-=======
+}
 .image-1 {
   margin: 0 auto;
   width: 50vw;
@@ -122,8 +121,9 @@ h4 {
 }
 
 .components:hover > .icons {
-  transform:translateY(-20px);
+  transform: translateY(-20px);
   z-index: -10;
+}
 .elem-4_icon {
   transition: transform 400ms;
 }
