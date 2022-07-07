@@ -41,6 +41,8 @@ h4 {
   font-weight: 600;
   letter-spacing: 2px;
 }
+
+}
 .elem-4 {
   width: 90%;
   padding-left: 7%;
@@ -58,8 +60,70 @@ h4 {
 }
 .text-reset {
   text-decoration: none;
+=======
+.image-1 {
+  margin: 0 auto;
+  width: 50vw;
 }
 
+.bodyelement1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  font-size: 2vw;
+  padding-top: 2vw;
+}
+
+.text {
+  font-size: 2vh;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+}
+
+.bodyelements-components {
+  margin: 0 auto;
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+}
+
+.components {
+  display: flex;
+  /* width: 5vw; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.components-prg {
+  padding-top: 5%;
+  width: 12vw;
+  /* right: 2vw; */
+}
+h4 {
+  margin: 0;
+}
+
+.icons {
+  width: 30%;
+  transition: transform 400ms;
+}
+
+.components:hover > .icons {
+  transform:translateY(-20px);
+  z-index: -10;
 .elem-4_icon {
   transition: transform 400ms;
 }
