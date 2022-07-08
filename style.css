@@ -20,6 +20,26 @@
   color: rgb(96, 96, 96) !important;
 }
 
+.navbar-brand {
+  text-transform: capitalize;
+}
+
+.navbar {
+  opacity: 0.5;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+nav.scrolled {
+  background-color: aliceblue !important;
+  transition: 0.5s !important;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
 .body-elem-1 {
   height: 100%;
   display: flex;
@@ -52,12 +72,19 @@ h4 {
 }
 
 .elem-4 {
+  text-align: center;
   width: 90%;
-  padding-left: 7%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   padding-bottom: 5%;
 }
+
+.elem-4_box {
+  width: 50%;
+  padding: 2vw 3vw;
+}
+
 .elem-4_big-txt {
   padding: 3% 0;
   margin: 0;
