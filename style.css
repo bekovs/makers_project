@@ -129,6 +129,7 @@ h4 {
 }
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
+  position: relative;
   z-index: -10;
 }
 @media screen and(max-width) {
