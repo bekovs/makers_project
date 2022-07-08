@@ -269,16 +269,22 @@ h4 {
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
 }
+.nav-link {
+  color: black !important;
+}
+.navbar-brand {
+  color: black !important;
+}
 
 nav.scrolled {
-  background-color: aliceblue !important;
+  background-color: black !important;
   transition: 0.5s !important;
 }
 nav {
   opacity: 0.6;
 }
 .scrolled-txt {
-  color: black !important;
+  color: aliceblue !important;
 }
 @media screen and (max-width: 992px) {
   nav {
