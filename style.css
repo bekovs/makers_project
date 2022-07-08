@@ -237,12 +237,14 @@ h2 {
   align-items: center;
   text-align: center;
   font-size: 0.7rem;
+  padding: 10% 0%;
 }
 
 .components-prg {
   padding-top: 5%;
   width: 12vw;
   /* right: 2vw; */
+  color: gray;
 }
 h4 {
   margin: 0;
@@ -251,6 +253,8 @@ h4 {
 .icons {
   width: 30%;
   transition: transform 400ms;
+  z-index: -1;
+  position: relative;
 }
 
 .components:hover > .icons {
@@ -259,11 +263,28 @@ h4 {
 }
 .elem-4_icon {
   transition: transform 400ms;
+  z-index: -1;
+  position: relative;
 }
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
-  position: relative;
-  z-index: -10;
 }
-@media screen and(max-width) {
+
+nav.scrolled {
+  background-color: aliceblue !important;
+  transition: 0.5s !important;
+}
+nav {
+  opacity: 0.6;
+}
+.scrolled-txt {
+  color: black !important;
+}
+@media screen and (max-width: 992px) {
+  nav {
+    opacity: 1;
+  }
+  .container-fluid {
+    color: red !important;
+  }
 }
