@@ -111,6 +111,7 @@ h4 {
   padding-top: 5%;
   width: 12vw;
   /* right: 2vw; */
+  color: gray;
 }
 h4 {
   margin: 0;
@@ -134,8 +135,6 @@ h4 {
 }
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
-  position: relative;
-  z-index: -10;
 }
 @media screen and(max-width) {
 }
