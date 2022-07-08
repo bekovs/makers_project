@@ -69,7 +69,6 @@ h4 {
 .text-reset {
   text-decoration: none;
 }
-
 .image-1 {
   margin: 0 auto;
   width: 50vw;
@@ -258,12 +257,12 @@ h4 {
   transform: translateY(-20px);
   z-index: -10;
 }
-
 .elem-4_icon {
   transition: transform 400ms;
 }
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
+  position: relative;
   z-index: -10;
 }
 @media screen and(max-width) {
