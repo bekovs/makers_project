@@ -265,5 +265,11 @@ h4 {
   position: relative;
   z-index: -10;
 }
+
+.body-elem-4 {
+  margin: 0 auto;
+  width: 80vw;
+}
+
 @media screen and(max-width) {
 }
