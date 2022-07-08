@@ -23,7 +23,7 @@ h4 {
 }
 
 .body-elem-1-background {
-  background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat;
+  /* background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat; */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -104,6 +104,7 @@ h4 {
   align-items: center;
   text-align: center;
   font-size: 0.7rem;
+  padding: 10% 0%;
 }
 
 .components-prg {
@@ -118,6 +119,8 @@ h4 {
 .icons {
   width: 30%;
   transition: transform 400ms;
+  z-index: -1;
+  position: relative;
 }
 
 .components:hover > .icons {
@@ -126,6 +129,8 @@ h4 {
 }
 .elem-4_icon {
   transition: transform 400ms;
+  z-index: -1;
+  position: relative;
 }
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
