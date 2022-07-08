@@ -1,15 +1,21 @@
-window.onscroll = function() {scrollFunction()};
-const myNav = document.getElementById('navbar');
-
+window.onscroll = function () {
+  scrollFunction();
+};
+const myNav = document.getElementById(".bg-dark");
+const navBrand = document.getElementById("navBrand");
+const navLink = document.getElementsByClassName("nav-link");
 function scrollFunction() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    // myNav.style.padding = "20px 0";
-    myNav.style.backgroundColor = "white !important";
-    myNav.classList.add('scrolled');
-    myNav.classList.add('text-dark');
+    myNav.classList.add("scrolled");
+    navBrand.classList.add("scrolled-txt");
+    for (let i = 0; i < navLink.length; i++) {
+      navLink[i].classList.add("scrolled-txt");
+    }
   } else {
-    // myNav.style.padding = 0;
-    myNav.classList.remove('scrolled');
-    myNav.classList.remove('text-dark')
+    myNav.classList.remove("scrolled");
+    navBrand.classList.remove("scrolled-txt");
+    for (let i = 0; i < navLink.length; i++) {
+      navLink[i].classList.remove("scrolled-txt");
+    }
   }
 }
