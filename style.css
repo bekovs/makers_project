@@ -32,7 +32,7 @@ h4 {
 }
 
 .body-elem-1-background {
-  /* background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat; */
+  background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -269,5 +269,22 @@ h4 {
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
 }
-@media screen and(max-width) {
+
+nav.scrolled {
+  background-color: aliceblue !important;
+  transition: 0.5s !important;
+}
+nav {
+  opacity: 0.6;
+}
+.scrolled-txt {
+  color: black !important;
+}
+@media screen and (max-width: 992px) {
+  nav {
+    opacity: 1;
+  }
+  .container-fluid {
+    color: red !important;
+  }
 }
