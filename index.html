@@ -15,9 +15,10 @@
   <body> 
     <div class="body-elem-1-background text-center">
         <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100 scrolled" id=".bg-dark">
+      <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100" id="bg-dark">
         <div class="container-fluid">
           <button
+            id="burger-menu"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -26,7 +27,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span id="toggler-icon" class="navbar-toggler-icon">&#9776</span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <a class="text-light navbar-brand" id="navBrand" href="#">JSTravel</a>
@@ -55,7 +56,7 @@
               See how your users experience your travel in real live or view
               countires to see any changes in performance over time.
             </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <div class="buttons-1 d-grid gap-3 d-sm-flex justify-content-sm-center">
               <button
                 type="button"
                 class="btn btn-primary px-4 gap-3 rounded-pill fonty"
