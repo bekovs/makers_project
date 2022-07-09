@@ -55,7 +55,7 @@ h4 {
 }
 
 .body-elem-1-background {
-  background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat;
+  /* background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat; */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -64,6 +64,9 @@ h4 {
 
 .container__elem-1 {
   width: 60%;
+}
+.text-center {
+  text-align: start !important;
 }
 
 .fonty {
