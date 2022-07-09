@@ -34,7 +34,7 @@ body {
 }
 
 nav.scrolled {
-  background-color: aliceblue !important;
+  background-color: black !important;
   transition: 0.5s !important;
 }
 
@@ -65,9 +65,6 @@ h4 {
 .container__elem-1 {
   width: 60%;
 }
-.text-center {
-  text-align: start !important;
-}
 
 .fonty {
   font-size: 0.8rem;
@@ -94,10 +91,12 @@ h4 {
 .elem-4_big-txt {
   padding: 3% 0;
   margin: 0;
+  font-size: 1.5rem;
 }
 .elem-4_small-txt {
   font-weight: 100;
   color: gray;
+  font-size: 1rem;
 }
 .text-reset {
   text-decoration: none;
@@ -325,44 +324,26 @@ h4 {
   transition: transform 400ms;
   z-index: -1;
   position: relative;
+  width: 15%;
 }
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
 }
-
 
 .body-elem-4 {
   margin: 0 auto;
   width: 80vw;
 }
 
-@media screen and(max-width) {
-
-.nav-link {
-  color: black !important;
-}
-.navbar-brand {
-  color: black !important;
-}
-.cards-container {
-  display: flex;
-}
-nav.scrolled {
-  background-color: black !important;
-  transition: 0.5s !important;
-}
-nav {
-  opacity: 0.6;
-}
-.scrolled-txt {
-  color: aliceblue !important;
-}
 @media screen and (max-width: 992px) {
   nav {
     opacity: 1;
   }
-  .container-fluid {
-    color: red !important;
-  }
+}
+.scrolled-txt {
+  color: white !important;
+}
 
+.cards-container {
+  display: flex;
 }
