@@ -15,9 +15,10 @@
   <body> 
     <div class="body-elem-1-background text-center">
         <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100 scrolled" id=".bg-dark">
+      <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100" id="bg-dark">
         <div class="container-fluid">
           <button
+            id="burger-menu"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -26,21 +27,21 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span id="toggler-icon" class="navbar-toggler-icon">&#9776</span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <a class="text-dark navbar-brand" id="navBrand" href="#">JSTravel</a>
+            <a class="text-light navbar-brand" id="navBrand" href="#">JSTravel</a>
             <div class="navbar-nav" >
-              <a class="text-dark nav-link px-3"  href="#"> HOME </a>
-              <a class="text-dark nav-link px-3"  href="#"> PAGES</a>
-              <a class="text-dark nav-link px-3"  href="#"> PORTFOLIO</a>
-              <a class="text-dark nav-link px-3"  href="#"> BLOG</a>
-              <a class="text-dark nav-link px-3"  href="#"> SHOP</a>
-              <a class="text-dark nav-link px-3"  href="#"> COMPONENTS</a>
-              <a class="text-dark nav-link px-3"  href="#"> DEMOS</a>
+              <a class="text-light nav-link px-3"  href="#"> HOME </a>
+              <a class="text-light nav-link px-3"  href="#"> PAGES</a>
+              <a class="text-light nav-link px-3"  href="#"> PORTFOLIO</a>
+              <a class="text-light nav-link px-3"  href="#"> BLOG</a>
+              <a class="text-light nav-link px-3"  href="#"> SHOP</a>
+              <a class="text-light nav-link px-3"  href="#"> COMPONENTS</a>
+              <a class="text-light nav-link px-3"  href="#"> DEMOS</a>
             </div>
             <div class="navbar-nav">
-              <a class="text-dark nav-link" id="nav-link_id" href="#">LOGIN</a>
+              <a class="text-light nav-link" id="nav-link_id" href="#">LOGIN</a>
             </div>
           </div>
         </div>
@@ -48,14 +49,14 @@
       <div class="body-elem-1">
         <div class="container__elem-1">
           <h1 class="display-5 fw-bold text-light">
-            Your customers will love you one minute from now.
+            Best travel app in the world
           </h1>
           <div class="col-lg-6 mx-auto">
             <p class="lead mb-4 text-light">
-              See how your users experience your website in realtime or view
-              trends to see any changes in performance over time.
+              See how your users experience your travel in real live or view
+              countires to see any changes in performance over time.
             </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <div class="buttons-1 d-grid gap-3 d-sm-flex justify-content-sm-center">
               <button
                 type="button"
                 class="btn btn-primary px-4 gap-3 rounded-pill fonty"
@@ -75,11 +76,11 @@
     </div>
     <!-- end of navabar -->
     <!-- bodyelement1 -->
-    <div class="bodyelement1">
+    <div class="bodyelement1 py-4">
       <div class="text-container">
         <h3 class="head">Your Site, Your Way.</h3>
         <p class="text">
-          See how your users experience your website in realtime or view trends
+          See how your users experience our app in realtime or view trends
           to see any changes in performance over time.
         </p>
       </div>
@@ -90,7 +91,7 @@
     <!-- компаненты -->
     <div class="bodyelements-components">
       <div class="components">
-        <img class="icons" src="./assets/images/travel_icon1.svg" alt="" />
+        <img class="icons" src="./assets/images/plane.png" alt="" />
         <h4 class="components-text">Visual Composer</h4>
         <p class="components-prg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -99,7 +100,7 @@
       </div>
 
       <div class="components">
-        <img class="icons" src="./assets/images/travel_icon2.svg" alt="" />
+        <img class="icons" src="./assets/images/plane.png" alt="" />
         <h4 class="components-text">Revolution Slider</h4>
         <p class="components-prg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -107,7 +108,7 @@
         </p>
       </div>
       <div class="components">
-        <img class="icons" src="./assets/images/travel_icon3.svg" alt="" />
+        <img class="icons" src="./assets/images/plane.png" alt="" />
         <h4 class="components-text">User Experience</h4>
         <p class="components-prg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -115,7 +116,7 @@
         </p>
       </div>
       <div class="components">
-        <img class="icons" src="./assets/images/travel_icon4.svg" alt="" />
+        <img class="icons" src="./assets/images/plane.png" alt="" />
         <h4 class="components-text">Fully Responsive</h4>
         <p class="components-prg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -123,50 +124,50 @@
         </p>
       </div>
     </div>
-    <div class="body-elem-4 row flex-lg-row align-items-center g-5 ">
+    <div class="body-elem-4 row flex-lg-row align-items-center g-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="./assets/images/travel.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead mb-100">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="col-lg-6 w-30">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Travel around the world</h1>
+        <p class="lead mb-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate aut inventore eum dolores fuga alias placeat maiores quia nemo.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           </div>
       </div>
     </div>
-    <div class="elem4__container">
+    <div class="elem4__container py-4">
       <div class="elem-4">
         <div class="elem-4_box">
-          <img src="./assets/images/2022-07-07_15-35-40.png" alt="" class="elem-4_icon">
-          <p class="elem-4_big-txt">Visual Composer</p>
-          <p class="elem-4_small-txt">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+          <img src="./assets/images/plane-ticket (1).png" alt="" class="elem-4_icon">
+          <p class="elem-4_big-txt">Get Tickets</p>
+          <p class="elem-4_small-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel ipsam debitis modi rerum reprehenderit?</p>
         </div>
         <div class="elem-4_box">
-          <img src="./assets/images/2022-07-07_15-35-40.png" alt="" class="elem-4_icon">
-          <p class="elem-4_big-txt">Visual Composer</p>
-          <p class="elem-4_small-txt">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+          <img src="./assets/images/plane-ticket (1).png" alt="" class="elem-4_icon">
+          <p class="elem-4_big-txt">Get Tickets</p>
+          <p class="elem-4_small-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel ipsam debitis modi rerum reprehenderit?</p>
         </div>
         <div class="elem-4_box">
-          <img src="./assets/images/2022-07-07_15-35-40.png" alt="" class="elem-4_icon">
-          <p class="elem-4_big-txt">Visual Composer</p>
-          <p class="elem-4_small-txt">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+          <img src="./assets/images/plane-ticket (1).png" alt="" class="elem-4_icon">
+          <p class="elem-4_big-txt">Get Tickets</p>
+          <p class="elem-4_small-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel ipsam debitis modi rerum reprehenderit?</p>
         </div>
       </div>
       <div class="elem-4">
         <div class="elem-4_box">
-          <img src="./assets/images/2022-07-07_15-35-40.png" alt="" class="elem-4_icon">
-          <p class="elem-4_big-txt">Visual Composer</p>
-          <p class="elem-4_small-txt">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+          <img src="./assets/images/plane-ticket (1).png" alt="" class="elem-4_icon">
+          <p class="elem-4_big-txt">Get Tickets</p>
+          <p class="elem-4_small-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel ipsam debitis modi rerum reprehenderit?</p>
         </div>
         <div class="elem-4_box">
-          <img src="./assets/images/2022-07-07_15-35-40.png" alt="" class="elem-4_icon">
-          <p class="elem-4_big-txt">Visual Composer</p>
-          <p class="elem-4_small-txt">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+          <img src="./assets/images/plane-ticket (1).png" alt="" class="elem-4_icon">
+          <p class="elem-4_big-txt">Get Tickets</p>
+          <p class="elem-4_small-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel ipsam debitis modi rerum reprehenderit?</p>
         </div>
         <div class="elem-4_box">
-          <img src="./assets/images/2022-07-07_15-35-40.png" alt="" class="elem-4_icon">
-          <p class="elem-4_big-txt">Visual Composer</p>
-          <p class="elem-4_small-txt">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+          <img src="./assets/images/plane-ticket (1).png" alt="" class="elem-4_icon">
+          <p class="elem-4_big-txt">Get Tickets</p>
+          <p class="elem-4_small-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel ipsam debitis modi rerum reprehenderit?</p>
         </div>
       </div>
       
@@ -179,41 +180,47 @@
       <!-- !CARDS -->
       <div class="cards">
         <div class="cards-container">
-        <div class="card-items first-item">
-          <div class="hidden-text">
-            <h3>ABOUT KEKAS</h3>
+          <div class="card-items first-item">
+            <div class="hidden-text">
+              <h6>about kekas</h6>
+              <h3>Lorem Ipsum!</h3>
+            </div>
+          </div>
+          <div class="card-items second-item">
+            <div class="hidden-text">
+              <h6>about kekas</h6>
+              <h3>Lorem Ipsum!</h3>
+            </div>
+          </div>
+          
+          <div class="card-items third-item">
+            <div class="hidden-text">
+              <h6>about kekas</h6>
+              <h3>Lorem Ipsum!</h3>
+            </div>
           </div>
         </div>
-        <div class="card-items second-item">
-          <div class="hidden-text">
-            <h3>ABOUT KEKAS</h3>
+        <div class="cards-container">
+          <div class="card-items first-item">
+            <div class="hidden-text">
+              <h6>about kekas</h6>
+              <h3>Lorem Ipsum!</h3>
+            </div>
+          </div>
+          <div class="card-items second-item">
+            <div class="hidden-text">
+              <h6>about kekas</h6>
+              <h3>Lorem Ipsum!</h3>
+            </div>
+          </div>
+          
+          <div class="card-items third-item">
+            <div class="hidden-text">
+              <h6>about kekas</h6>
+              <h3>Lorem Ipsum!</h3>
+            </div>
           </div>
         </div>
-        
-        <div class="card-items third-item">
-          <div class="hidden-text">
-            <h3>ABOUT KEKAS</h3>
-          </div>
-        </div>
-      </div>
-      <div class="cards-container">
-        <div class="card-items first-item">
-          <div class="hidden-text">
-            <h3>ABOUT KEKAS</h3>
-          </div>
-        </div>
-        <div class="card-items second-item">
-          <div class="hidden-text">
-            <h3>ABOUT KEKAS</h3>
-          </div>
-        </div>
-        
-        <div class="card-items third-item">
-          <div class="hidden-text">
-            <h3>ABOUT KEKAS</h3>
-          </div>
-        </div>
-      </div>
 
 
       <!-- !CARDS END -->

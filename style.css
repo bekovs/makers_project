@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body {
-  overflow-x: hidden;
-}
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box !important;
   font-family: "Prompt";
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .body-el3 {
@@ -28,20 +30,18 @@ body {
 }
 
 .navbar {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   font-size: 0.9rem;
   text-transform: uppercase;
 }
 
 nav.scrolled {
-  background-color: black !important;
+  background-color: rgb(255, 255, 255) !important;
+  /* padding: 0; */
+  /* need to add transition on padding */
   transition: 0.5s !important;
 }
 
-.navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-}
 
 .body-elem-1 {
   height: 100%;
@@ -50,16 +50,17 @@ nav.scrolled {
   align-items: center;
   justify-content: center;
 }
+
 h4 {
   margin: 0;
 }
 
 .body-elem-1-background {
-  /* background: url("./assets/images/pexels-jeremy-bishop-2923595.jpg") no-repeat; */
+  background: url("./assets/images/pexels-jeremy-bishop.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 50vw;
+  height: 100vh;
 }
 
 .container__elem-1 {
@@ -126,21 +127,23 @@ h2 {
   padding-bottom: 100px;
 }
 
+/* need to fix border sizing, overlaying footer */
 .cards {
+  box-sizing: content-box;
   display: flex;
   flex-wrap: wrap;
   width: 99vw;
-  height: 900px;
+  height: 100vh;
 }
 
 .card-items {
+  box-sizing: border-box;
   width: 32vw;
   height: 50vh;
   /* border: 1px solid black; */
   margin: 7px;
-
   display: block;
-  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+  /* box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08); */
   /* margin: 20px; */
   overflow: hidden;
   max-height: 50vh;
@@ -185,11 +188,10 @@ h2 {
 .card-items div {
   width: calc(100% - 20px);
   height: 100%;
-
   overflow: hidden;
   top: 0;
   left: 0;
-  padding: 10px;
+  padding-bottom: 1%;
   text-align: center;
   display: flex;
   flex-direction: column-reverse;
@@ -197,10 +199,13 @@ h2 {
 
 .card-items div {
   opacity: 0;
-  /* background-color: rgba(0, 0, 0, 0.15); */
   transition: all 0.5s ease-in-out;
   color: black;
   transform: translate(0px, 300px) rotate(0deg);
+}
+
+.card-items div h6 {
+  font-weight: 300;
 }
 
 .card-items:hover div {
@@ -214,56 +219,6 @@ h2 {
   overflow: hidden;
 }
 
-/* 
-.effects  {
-  position: relative;
-  display: inline-block;
-  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
-  border:1px solid #cfcfcf;
-  background-color: #fff;
-  font: normal 14px sans-serif;
-  margin: 20px;
-  border: 5px solid #fff;
-  overflow: hidden;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  max-height: 200px;
- }
- 
- .effects  img {
-  display: block;
-  position: relative;
-  max-width:100%;
-  height:auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- }
- 
- .effects  div {
-  width: calc(100% - 20px);
-  height: 100%;
-
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  text-align: center;
- }
- 
- 
- .effects  div {
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.15);
-  transition: all 0.4s ease-in-out;
-  color: #fff;
-  transform: translate(250px, 0px) rotate(0deg);
- }
- 
- .effects:hover div {
-  opacity: 1;
-  transform: translate(0px, 0px) rotate(0deg);
- } */
 .head {
   font-size: 2vw;
   padding-top: 2vw;
@@ -296,7 +251,7 @@ h2 {
   align-items: center;
   text-align: center;
   font-size: 0.7rem;
-  padding: 10% 0%;
+  padding: 5% 0%;
 }
 
 .components-prg {
@@ -310,8 +265,9 @@ h4 {
 }
 
 .icons {
-  width: 30%;
+  width: 15%;
   transition: transform 400ms;
+  padding-bottom: 10%;
   z-index: -1;
   position: relative;
 }
@@ -335,15 +291,63 @@ h4 {
   width: 80vw;
 }
 
+/* need to fix border sizing from block above */
+footer{
+  margin-top: 10%;
+}
+
 @media screen and (max-width: 992px) {
   nav {
     opacity: 1;
   }
+
+  .navbar-toggler-icon{
+    display: flex;
+    color:rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scrolled-burger {
+    color:rgb(0, 0, 0);
+  }
+
+  .container__elem-1 {
+    width: 60vw;
+    font-size: smaller;
+  }
+  
+  .fonty {
+    font-size: 1.4vw;
+    width: 20vw;
+    padding: 5% 20%;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .fonty {
+    font-size: 2vw;
+    width: 30vw;
+    padding: 5% 20%;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .buttons-1 {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .scrolled-txt {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .cards-container {
   display: flex;
+  box-sizing: border-box;
 }
