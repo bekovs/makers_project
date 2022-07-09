@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -133,7 +136,7 @@ h2 {
   height: 50vh;
   /* border: 1px solid black; */
   margin: 7px;
-  position: relative;
+
   display: block;
   box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
   /* margin: 20px; */
@@ -177,20 +180,10 @@ h2 {
   background-image: url("./assets/images/nature6.png");
 }
 
-.card-items img {
-  display: block;
-  position: relative;
-  /* max-width:100%; */
-  height: auto;
-  display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
 .card-items div {
   width: calc(100% - 20px);
   height: 100%;
-  /* position: absolute; */
+
   overflow: hidden;
   top: 0;
   left: 0;
@@ -248,7 +241,7 @@ h2 {
  .effects  div {
   width: calc(100% - 20px);
   height: 100%;
-  position: absolute;
+
   overflow: hidden;
   top: 0;
   left: 0;
@@ -339,7 +332,9 @@ h4 {
 .navbar-brand {
   color: black !important;
 }
-
+.cards-container {
+  display: flex;
+}
 nav.scrolled {
   background-color: black !important;
   transition: 0.5s !important;
