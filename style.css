@@ -329,6 +329,15 @@ h4 {
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
 }
+
+
+.body-elem-4 {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+@media screen and(max-width) {
+
 .nav-link {
   color: black !important;
 }
@@ -355,4 +364,5 @@ nav {
   .container-fluid {
     color: red !important;
   }
+
 }
