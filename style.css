@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +21,26 @@
 }
 .nav-link:hover {
   color: rgb(96, 96, 96) !important;
+}
+
+.navbar-brand {
+  text-transform: capitalize;
+}
+
+.navbar {
+  opacity: 0.5;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+nav.scrolled {
+  background-color: aliceblue !important;
+  transition: 0.5s !important;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
 
 .body-elem-1 {
@@ -52,12 +75,19 @@ h4 {
 }
 
 .elem-4 {
+  text-align: center;
   width: 90%;
-  padding-left: 7%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   padding-bottom: 5%;
 }
+
+.elem-4_box {
+  width: 50%;
+  padding: 2vw 3vw;
+}
+
 .elem-4_big-txt {
   padding: 3% 0;
   margin: 0;
@@ -104,43 +134,70 @@ h2 {
 .card-items {
   width: 32vw;
   height: 50vh;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 7px;
-  position: relative;
+
   display: block;
   box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
   /* margin: 20px; */
   overflow: hidden;
   max-height: 50vh;
-  background-color: black;
+  background-color: transparent;
+  background-image: url("./assets/images/beach.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
 }
 
-.card-items img {
-  display: block;
-  position: relative;
-  /* max-width:100%; */
-  height: auto;
-  display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
+.card-items:hover {
+  background-position-y: -10vh;
+  background-size: cover;
+  /* transform: translateY(-30px); */
+}
+
+.first-item {
+  background-image: url("./assets/images/nature2.png");
+}
+
+.second-item {
+  background-image: url("./assets/images/nature1.png");
+}
+
+.third-item {
+  background-image: url("./assets/images/nature3.png");
+}
+
+.fourth-item {
+  background-image: url("./assets/images/nature4.png");
+}
+
+.fifth-item {
+  background-image: url("./assets/images/nature5.png");
+}
+
+.sixth-item {
+  background-image: url("./assets/images/nature6.png");
 }
 
 .card-items div {
   width: calc(100% - 20px);
   height: 100%;
-  /* position: absolute; */
+
   overflow: hidden;
   top: 0;
   left: 0;
   padding: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .card-items div {
   opacity: 0;
   /* background-color: rgba(0, 0, 0, 0.15); */
   transition: all 0.5s ease-in-out;
-  color: #fff;
+  color: black;
   transform: translate(0px, 300px) rotate(0deg);
 }
 
@@ -184,7 +241,7 @@ h2 {
  .effects  div {
   width: calc(100% - 20px);
   height: 100%;
-  position: absolute;
+
   overflow: hidden;
   top: 0;
   left: 0;
@@ -237,12 +294,14 @@ h2 {
   align-items: center;
   text-align: center;
   font-size: 0.7rem;
+  padding: 10% 0%;
 }
 
 .components-prg {
   padding-top: 5%;
   width: 12vw;
   /* right: 2vw; */
+  color: gray;
 }
 h4 {
   margin: 0;
@@ -251,6 +310,8 @@ h4 {
 .icons {
   width: 30%;
   transition: transform 400ms;
+  z-index: -1;
+  position: relative;
 }
 
 .components:hover > .icons {
@@ -259,12 +320,13 @@ h4 {
 }
 .elem-4_icon {
   transition: transform 400ms;
+  z-index: -1;
+  position: relative;
 }
 .elem-4_box:hover > .elem-4_icon {
   transform: translateY(-20px);
-  position: relative;
-  z-index: -10;
 }
+
 
 .body-elem-4 {
   margin: 0 auto;
@@ -272,4 +334,32 @@ h4 {
 }
 
 @media screen and(max-width) {
+
+.nav-link {
+  color: black !important;
+}
+.navbar-brand {
+  color: black !important;
+}
+.cards-container {
+  display: flex;
+}
+nav.scrolled {
+  background-color: black !important;
+  transition: 0.5s !important;
+}
+nav {
+  opacity: 0.6;
+}
+.scrolled-txt {
+  color: aliceblue !important;
+}
+@media screen and (max-width: 992px) {
+  nav {
+    opacity: 1;
+  }
+  .container-fluid {
+    color: red !important;
+  }
+
 }
